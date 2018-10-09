@@ -1,0 +1,12 @@
+{
+  "name": "ip2asn",
+  "version": "1.0.0",
+  "description": "Find AS number of any IP address.",
+  "main": "index.js",
+  "repository": "https://github.com/bizprat/ip2asn.git",
+  "author": "Prateek Anand",
+  "license": "MIT",
+  "dependencies": {
+    "ip-to-asn": "^1.0.0"
+  }
+}
