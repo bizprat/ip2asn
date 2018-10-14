@@ -19,7 +19,7 @@ If no parameters passed, it will automatically pick up requester's IP
 **Response:**
 
 ```
-
+{
   "8.8.8.8": {
     "range": "8.8.8.0/24",
     "countryCode": "US",
