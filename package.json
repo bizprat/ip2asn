@@ -4,7 +4,7 @@
   "description": "Find AS number of any IP address.",
   "main": "index.js",
   "scripts": {
-    "start": "node test.js"
+    "start": "node index.js"
   },
   "repository": "https://github.com/bizprat/ip2asn.git",
   "author": "Prateek Anand",
