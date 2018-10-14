@@ -13,7 +13,7 @@ client.query(addresses, (err, results) => {
 })
 
 app.get('/:ip?', (req, res) => {
-    let addresses1 = (req.params.ip === true) ? req.params.ip.split(",") : (req.headers['x-forwarded-for'] || req.connection.remoteAddress)
+    let addresses1 = (req.params.ip) ? req.params.ip.split(",") : (req.headers['x-forwarded-for'] || req.connection.remoteAddress)
     let addresses = req.params.ip.split(",");
     let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
     res.send(addresses1);
