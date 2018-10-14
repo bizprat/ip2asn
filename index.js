@@ -5,8 +5,6 @@ const express = require("express"),
 
 const client = new IPToASN();
 
-var addresses = ["139.167.218.94", "8.8.8.8"];
-
 app.get('/:ip?', (req, res) => {
   let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
   let separateIP = ip.split(":");
