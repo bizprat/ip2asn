@@ -13,9 +13,10 @@ client.query(addresses, (err, results) => {
 })
 
 app.get('/:ip?', (req, res) => {
-    let addresses1 = (req.params.ip) ? req.params.ip.split(",") : (req.headers['x-forwarded-for'] || req.connection.remoteAddress)
-    let addresses = req.params.ip.split(",");
     let ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+    let addresses1 = (req.params.ip) ? req.params.ip.split(",") : ip.split(",");
+    let addresses = req.params.ip.split(",");
+
     res.send(addresses1);
     // console.log(req.socket.address());
     // res.send(JSON.stringify(req, undefined, 4));
