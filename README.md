@@ -2,6 +2,11 @@
 
 Find ASN, country, CIDR, registrar, registration date and description of IP address (works for both IPv4 and IPv6). There is no limit for the query.
 
+## How to install
+
+* Make sure you have [yarn](https://yarnpkg.com/en/) installed.
+* Run ``` yarn install ``` command in the current directory.
+
 ## How to use
 
 Deploy the code to server and open the URL in the browser. To find the details of any IP pass it in the URL like the example given below.
